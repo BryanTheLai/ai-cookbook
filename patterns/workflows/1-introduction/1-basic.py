@@ -11,7 +11,7 @@ completion = client.chat.completions.create(
         {"role": "system", "content": "You're a helpful assistant."},
         {
             "role": "user",
-            "content": "Write a limerick about the Python programming language.",
+            "content": "Write a limerick about the Python programming language. Answer using 10 words.",
         },
     ],
 )

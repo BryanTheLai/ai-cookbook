@@ -80,7 +80,8 @@ def call_function(name, args):
 
 for tool_call in completion.choices[0].message.tool_calls:
     name = tool_call.function.name
-    args = json.loads(tool_call.function.arguments)
+    raw_args = tool_call.function.arguments
+    args = json.loads(raw_args)
     messages.append(completion.choices[0].message)
 
     result = call_function(name, args)

@@ -47,7 +47,7 @@ tools = [
     }
 ]
 
-system_prompt = "You are a helpful assistant that answers questions from the knowledge base about our e-commerce store."
+system_prompt = "You're a helpful assistant that answers questions from the knowledge base about our e-commerce store extremely concisely, clearly and straight to the point."
 
 messages = [
     {"role": "system", "content": system_prompt},
